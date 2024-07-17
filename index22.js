@@ -11,7 +11,7 @@ let totalExpense = 0;
 transactionForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const type = document.getElementById("type").checked ? "expense" : "income";
+  const type = document.getElementById("type").checked ? "income" : "expense";
   const name = transactionForm.name.value.trim();
   const amount = parseFloat(transactionForm.amount.value);
   const date = transactionForm.date.value;
