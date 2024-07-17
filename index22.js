@@ -16,7 +16,7 @@ transactionForm.addEventListener("submit", function (event) {
   const amount = parseFloat(transactionForm.amount.value);
   const date = transactionForm.date.value;
 
-  if (!name || isNaN(amount) || amount <= 0 || !date) {
+  if (isNaN(amount) || amount <= 0 || !date) {
     alert("Please fill in all fields correctly.");
     return;
   }
